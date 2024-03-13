@@ -1,5 +1,5 @@
 //API DATA
-let ip = "192.168.2.50"
+let ip = "rasp-maksy"
 const apiUrl = `http://${ip}:5000/api/alarm-api`;
 
 const alarmBtn = document.getElementById("alarm_in_btn");
