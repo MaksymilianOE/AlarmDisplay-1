@@ -2,6 +2,8 @@
 let ip = "rasp-maksy"
 const apiUrl = `http://${ip}:5000/api/alarm-api`;
 
+let hausnummer = 0;
+
 const alarmBtn = document.getElementById("alarm_in_btn");
 const keyWordField = document.getElementById("In_keyword");
 
@@ -19,6 +21,8 @@ const freitext = document.getElementById("Freitext");
 //checkboxes alarmtype, gong, gongtype
 const brandalarm = document.getElementById("fire");
 const thl = document.getElementById("thl");
+
+//!const gongtype_fire = document.getElementById("alarm_sound");
 
 const city = document.getElementById("city");
 const houseNumber = document.getElementById("houseNumber");
@@ -87,7 +91,6 @@ async function getJsonData() {
                             alert("Die Hausnummer ist eine Zahl! (Bspw. 2 statt 2a)!");
                             return;
                         }
-                        let hausnummer = 0;
                         hausnummer = houseNumber.value;
                         console.log("stateRes: ", stateRes);
                         if (!stateRes) { //fale => kein Alarm
@@ -132,7 +135,7 @@ async function getJsonData() {
                         }
                     } else {
                         //gong aus
-                        if (gongtype_fire.checked) {
+                        if (brandalarm.checked) {
                             jsonData = {
                                 title: keyWordField.value,
                                 vehicles: checkedVehicles,
