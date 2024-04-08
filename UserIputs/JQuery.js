@@ -7,7 +7,7 @@ $(function () {
         "TH2 - Wasserrettung", "TH2 - Unfall", "TH3 - Gebäudeeinsturz", "TH3 Sturmschaden groß",
         "TH4 - VU mit Gefahrgut", "Gefahrguteinsatz", "Alarmstufenerhöhung auf B1", "Alarmstufenerhöhung auf B2",
         "Alarmstufenerhöhung auf B3", "Alarmstufenerhöhung auf B4", "Alarmstufenerhöhung auf TH1", "Alarmstufenerhöhung auf TH2",
-        "Alarmstufenerhöhung auf TH3", "Alarmstufenerhöhung auf zu TH4"]; //Stichwörtersammlung / Array
+        "Alarmstufenerhöhung auf TH3", "Alarmstufenerhöhung auf zu TH4", "Probealarm"]; //Stichwörtersammlung / Array
     $("#In_keyword").autocomplete({
         source: stichwoerter,
     });

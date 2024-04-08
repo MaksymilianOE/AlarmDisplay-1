@@ -194,7 +194,7 @@ function getCheckedBoxes(type) { //types: vehicles; alarmTypes; gong
 //Send POST request to server
 
 function sendPostRequest(jsonData) {
-
+    console.log(jsonData);
     // Daten, die du senden möchtest
 
     // POST-Anfrage erstellen
