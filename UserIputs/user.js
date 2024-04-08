@@ -35,6 +35,7 @@ const checkboxes_alarmTypes = [brandalarm, thl];
 const inputCheckboxes = [rei19_1, rei19_2, rei44, rei46, rei174, brandalarm, thl, resetCheckbox];
 const inputTextFields = [city, houseNumber, street, freitext];
 
+soundRequired.style.visibility = "hidden";
 //Eventlistener
 
 alarmBtn.addEventListener("click", () => {
@@ -84,6 +85,7 @@ async function getJsonData() {
                 } else {
                     console.log("City: " + city.value + " - Street: " + street.value);
                     let kategorie = checkedAlarmBoxes[0].toString();
+                    soundRequired.checked = true;
                     if (soundRequired.checked) {
                         //gong an
                         console.log("K: ", kategorie);

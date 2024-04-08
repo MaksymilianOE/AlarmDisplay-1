@@ -15,7 +15,7 @@ class Alarm {
     street = this.street;
     city = this.city;
     freitext = this.freitext;
-    alarmLevel = this.alarmLevel;
+    alarmLevel = this.alarmLevel; //TODO: Wird nicht verwendet - in Zukunft rauspatchen!
 
     checkData() {
         if (this.title != "" &&

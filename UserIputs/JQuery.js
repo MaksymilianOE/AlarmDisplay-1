@@ -1,13 +1,13 @@
 $(function () {
-    var stichwoerter = ["B0 - Nachschau", "B0 - Nachschau nach Blitzeinschlag", "B0 - Kleinbrand", "B1 - Garagenbrand",
-        "B1 - brennender PKW", "B1 - Brennt Gartenhaus",
-        "B1 - Flächenbrand", "B2 - Zimmerbrand", "B2 - Waldbrand klein", "B3 - Gebäudebrand", "B3 - BMA", "B3 - Dachstuhlbrand", "B4 - Großflächenbrand",
-        "B4 - Waldbrand groß", "TH0 Unterstützung RD", "TH0 - Türöffnung", "TH0 - Ölspur",
+    var stichwoerter = ["F0 - Nachschau", "F0 - Nachschau nach Blitzeinschlag", "F0 - Kleinbrand", "F1 - Garagenbrand",
+        "F1 - brennender PKW", "F1 - Brennt Gartenhaus",
+        "F1 - Flächenbrand", "F2 - Zimmerbrand", "F2 - Waldbrand klein", "F3 - Gebäudebrand", "F3 - BMA", "F3 - Dachstuhlbrand", "F4 - Großflächenbrand",
+        "F4 - Waldbrand groß", "TH0 Unterstützung RD", "TH0 - Türöffnung", "TH0 - Ölspur",
         "TH1 - Personensuche", "TH1 - Sturmschaden klein", "TH1 - Wasserschaden", "TH1 - Person hinter Tür", "TH2 - Verkehrsunfall",
-        "TH2 - Wasserrettung", "TH2 - Unfall", "TH3 - Gebäudeeinsturz", "TH3 Sturmschaden groß",
-        "TH4 - VU mit Gefahrgut", "Gefahrguteinsatz", "Alarmstufenerhöhung auf B1", "Alarmstufenerhöhung auf B2",
-        "Alarmstufenerhöhung auf B3", "Alarmstufenerhöhung auf B4", "Alarmstufenerhöhung auf TH1", "Alarmstufenerhöhung auf TH2",
-        "Alarmstufenerhöhung auf TH3", "Alarmstufenerhöhung auf zu TH4", "Probealarm"]; //Stichwörtersammlung / Array
+        "TH2 - Wasserrettung", "TH2 - Unfall", "TH3 - Gefäudeeinsturz", "TH3 Sturmschaden groß",
+        "TH4 - VU mit Gefahrgut", "Gefahrguteinsatz", "Alarmstufenerhöhung auf F1", "Alarmstufenerhöhung auf F2",
+        "Alarmstufenerhöhung auf F3", "Alarmstufenerhöhung auf F4", "Alarmstufenerhöhung auf TH1", "Alarmstufenerhöhung auf TH2",
+        "Alarmstufenerhöhung auf TH3", "Alarmstufenerhöhung auf zu TH4", "Profealarm"]; //Stichwörtersammlung / Array
     $("#In_keyword").autocomplete({
         source: stichwoerter,
     });
